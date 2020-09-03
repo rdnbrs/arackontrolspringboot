@@ -30,7 +30,7 @@ public class AracController {
         return ResponseEntity.ok(tumAraclar);
     }
 
-    @PostMapping("/tumaraclar")
+    @PostMapping("/tumaraclar2")
     public ResponseEntity<List<AracDto>> getAllPost() {
         List<AracDto> tumAraclar = aracServiceImpl.getAll();
         return ResponseEntity.ok(tumAraclar);
