@@ -30,6 +30,12 @@ public class AracController {
         return ResponseEntity.ok(tumAraclar);
     }
 
+    @PostMapping("/tumaraclar")
+    public ResponseEntity<List<AracDto>> getAllPost() {
+        List<AracDto> tumAraclar = aracServiceImpl.getAll();
+        return ResponseEntity.ok(tumAraclar);
+    }
+
     @RequestMapping(method = RequestMethod.POST,
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
