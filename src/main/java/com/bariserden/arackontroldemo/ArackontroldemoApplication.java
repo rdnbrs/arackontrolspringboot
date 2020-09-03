@@ -16,6 +16,7 @@ public class ArackontroldemoApplication {
 	public ModelMapper getModelMapper(){
 		ModelMapper modelMapper = new ModelMapper();
 		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
+		
 		return modelMapper;
 	}
 }
